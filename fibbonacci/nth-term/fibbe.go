@@ -2,8 +2,8 @@ package main
 import(
 	"fmt"
 )
-func fibbonacci(n int) int{
-	var stack = []int{
+func fibbonacci(n int) int64{
+	var stack = []int64{
 		0,
 		1}
 	for ;n>0;n-- {
@@ -14,7 +14,7 @@ func fibbonacci(n int) int{
 	return stack[1]
 }
 func main(){
-	for i:=0;i<40;i++{
+	for i:=0;i<60;i++{
 		fmt.Println(fibbonacci(i))
 	}
 }
